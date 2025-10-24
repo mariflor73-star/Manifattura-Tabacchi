@@ -31,16 +31,21 @@
     }
 
     body {
-  background: url('manifattura_tabacchi.png') no-repeat center center fixed;
-  background-size: cover;
+  background: url('manifattura_tabacchi.png') no-repeat center top;
+  background-size: contain; /* Mostra l’edificio intero */
+  background-attachment: fixed;
+  background-color: #000; /* sfondo di riempimento dietro */
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", "Roboto", sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 2rem 1rem 4rem;
+  justify-content: center; /* 🔹 centra verticalmente */
+  align-items: center;     /* 🔹 centra orizzontalmente */
+  padding: 2rem 1rem;
+  backdrop-filter: brightness(0.7); /* leggermente più scuro */
+
+
     }
 
     .card {
